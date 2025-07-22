@@ -44,7 +44,7 @@
 
 ### 1. Клонируйте репозиторий
 ```bash
-git clone https://github.com/yourusername/decimal-python-sdk.git
+git clone https://github.com/maxwell2010/decimal-python-sdk.git
 cd decimal-python-sdk
 ```
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 
 ### 4. Установите зависимости Node.js
 ```bash
-npm install fernet dotenv bip39 dsc-js-sdk
+npm install fernet dotenv bip39 [dsc-js-sdk](https://bitbucket.org/decimalteam/dsc-js-sdk/src/master)
 ```
 > **Примечание**: Убедитесь, что Node.js и npm установлены. Проверьте с помощью `node -v` и `npm -v`. Модуль `dsc-js-sdk` будет установлен в `node_modules/dsc-js-sdk`.
 
