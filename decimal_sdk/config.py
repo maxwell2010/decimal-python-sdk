@@ -35,11 +35,3 @@ class Config:
             str: Ключ шифрования.
         """
         return self.encryption_key
-
-    def get_wallet_id(self) -> str:
-        """Получить идентификатор кошелька.
-
-        Returns:
-            str: Идентификатор кошелька.
-        """
-        return self.wallet_id
