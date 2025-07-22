@@ -51,7 +51,7 @@ cd decimal-python-sdk
 ### 2. Создайте виртуальное окружение
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
+source .venv/bin/activate  # Linux/macOS
 .\.venv\Scripts\activate   # Windows
 ```
 
@@ -77,10 +77,16 @@ npm install fernet dotenv bip39
    ```
 
 2. **Свяжите `dsc-js-sdk` с проектом**:
-   ```bash
-   cd C:\Users\Maximus\PycharmProjects\decimal_python_sdk
-   npm link dsc-js-sdk
-   ```
+   - **Для Linux/macOS**:
+     ```bash
+     cd ~/projects/decimal-python-sdk
+     npm link dsc-js-sdk
+     ```
+   - **Для Windows**:
+     ```powershell
+     cd C:\Projects\decimal_python_sdk
+     npm link dsc-js-sdk
+     ```
 
 > **Примечание для Windows**:
 > - Убедитесь, что Node.js и npm установлены. Проверьте версии:
@@ -93,6 +99,15 @@ npm install fernet dotenv bip39
 >   ```powershell
 >   Start-Process powershell -Verb RunAs
 >   ```
+
+> **Примечание для Linux/macOS**:
+> - Убедитесь, что Node.js и npm установлены. Проверьте версии:
+>   ```bash
+>   node -v
+>   npm -v
+>   ```
+> - Если команды не найдены, установите Node.js с помощью пакетного менеджера (например, `sudo apt install nodejs npm` на Ubuntu или `brew install node` на macOS).
+> - Путь `~/projects/decimal-python-sdk` является примером. Замените его на актуальный путь к вашему проекту, например, `~/decimal-python-sdk`.
 
 > **Совет**: Если `dsc-js-sdk` опубликован в npm, вы можете установить его напрямую:
 > ```bash
@@ -301,5 +316,6 @@ pytest tests/
 Проект распространяется под лицензией **MIT**. Подробности см. в файле `LICENSE`.
 
 ---
+
 
 ⭐ **Понравился проект?** Поставьте звезду на GitHub! 🌟
