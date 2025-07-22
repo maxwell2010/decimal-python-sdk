@@ -1,0 +1,31 @@
+import sys
+from decimal_sdk import DecimalSDK
+from decimal_sdk.exceptions import WalletRegistrationError, IPCConnectionError, IPCError, EncryptionError
+import asyncio
+
+print(f"Python version: {sys.version}")
+print(f"DecimalSDK module: {DecimalSDK.__module__}")
+print(f"DecimalSDK file: {DecimalSDK.__file__}")
+
+async def test_create_wallet():
+    sdk = DecimalSDK()
+    print(f"SDK instance created: {sdk}")
+    print(f"Available methods: {dir(sdk)}")
+    try:
+        mnemonic = "word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12"
+        wallet_info = await sdk.create_wallet(mnemonic)
+        print(f"Кошелёк создан: {wallet_info['address']}")
+    except WalletRegistrationError as e:
+        print(f"Ошибка регистрации кошелька: {e}")
+    except IPCConnectionError as e:
+        print(f"Ошибка подключения к IPC: {e}")
+    except IPCError as e:
+        print(f"Ошибка IPC: {e}")
+    except EncryptionError as e:
+        print(f"Ошибка шифрования: {e}")
+    except AttributeError as e:
+        print(f"AttributeError: {e}")
+    except Exception as e:
+        print(f"Другая ошибка: {e}")
+
+asyncio.run(test_create_wallet())
