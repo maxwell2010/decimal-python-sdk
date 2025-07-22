@@ -310,6 +310,14 @@ pytest tests/
 
 ---
 
+## 📬 Контакты
+
+- 🌐 **Сайт**: [mintcandy.ru](https://mintcandy.ru)
+- 📧 **Поддержка**: [MintCandySupport](https://t.me/MintCandySupportBot)
+- 🐛 **GitHub Issues**: [Создать проблему](https://github.com/maxwell2010/decimal-python-sdk/issues)
+- 📩 **Telegram**: [@Maxwell2019](https://t.me/Maxwell2019)
+
+---
 
 ## 📜 Лицензия
 
